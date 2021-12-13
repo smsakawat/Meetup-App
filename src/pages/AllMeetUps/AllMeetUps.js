@@ -1,5 +1,6 @@
 import React from "react";
-const DUMMY_DATA = [
+import MeetupList from "../../components/meetups/MeetupList/MeetupList";
+const fakeData = [
   {
     id: "m1",
     title: "This is the first meetup",
@@ -23,11 +24,7 @@ const DUMMY_DATA = [
 const AllMeetUps = () => {
   return (
     <section>
-      <div>
-        {DUMMY_DATA.map((meetup) => {
-          return <p>{meetup.title}</p>;
-        })}
-      </div>
+      <MeetupList meetups={fakeData} />
     </section>
   );
 };
