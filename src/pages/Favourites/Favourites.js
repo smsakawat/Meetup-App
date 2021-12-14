@@ -7,9 +7,9 @@ const Favourites = () => {
 
   return (
     <section>
-      <h1>Favourite Meetups</h1>
+      <h1>My Favourites</h1>
       {favouritesConext.favourites.length === 0 ? (
-        <p>You got no favourites.Want to add one?</p>
+        <p style={{ color: "gray" }}>You got no favourites.Want to add one?</p>
       ) : (
         <MeetupList meetups={favouritesConext.favourites} />
       )}
